@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+html, body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+.video {
+  width: 100%;
+  height: 745px;
+  overflow: hidden;
+  margin: 0px auto;
+  position: relative;
+}
+video {
+  width: 100%;
+}
+.color-layer {
+  background-color: rgba(66, 106, 237, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+.top {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+  animation: 5s anim-lineUp ease-out;
+}
+.bottom {
+  margin-top: -50px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 80px;
+  animation: 6s anim-lineUp ease-out;
+}
+.w-btn {
+  position: relative;
+  border: none;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-family: "Noto Sans KR", sans-serif;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+  margin-top: -60px;
+  animation-delay: 2s;
+  animation: 7s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@media screen and (max-width :680px){
+  .video {
+    width: 400%;
+    height: 1005px;
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative;
+  }
+}
